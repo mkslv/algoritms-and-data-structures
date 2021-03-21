@@ -37,24 +37,24 @@ class Stack:
         sys.exit()
 
 
-# def main():
-st = Stack()
+def main():
+     st = Stack()
 
-while True:
-    command, *element = input().split(sep=" ")
-    if command == "push":
-        st.push(element)
-    elif command == "pop":
-        st.pop()
-    elif command == "back":
-        st.back()
-    elif command == "size":
-        st.size()
-    elif command == "clear":
-        st.clear()
-    elif command == "exit":
-        st.exit()
+    while True:
+        command, *element = input().split(sep=" ")
+        if command == "push":
+            st.push(element)
+        elif command == "pop":
+            st.pop()
+        elif command == "back":
+            st.back()
+        elif command == "size":
+            st.size()
+        elif command == "clear":
+            st.clear()
+        elif command == "exit":
+            st.exit()
 
-# if __name__ == "__main__":
-#     # execute only if run as a script
-#     main()
+if __name__ == "__main__":
+    # execute only if run as a script
+    main()
